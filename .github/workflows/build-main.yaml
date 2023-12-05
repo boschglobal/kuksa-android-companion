@@ -28,7 +28,7 @@ jobs:
 
       - uses: ./.github/actions/create-release-apk
         with:
-          keystore: ${{ secrets.KEYSTORE_RELEASE }}
+          keystore: ${{ secrets.KEYSTORE_DEBUG }}
           key_alias:  ${{ secrets.SIGNING_KEY_ALIAS }}
           key_password: ${{ secrets.SIGNING_KEY_PASSWORD }}
           store_password: ${{ secrets.SIGNING_STORE_PASSWORD }}

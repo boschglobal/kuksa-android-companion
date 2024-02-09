@@ -64,7 +64,7 @@ import org.eclipse.kuksa.vsscore.model.VssSpecification
 import javax.inject.Inject
 
 @AndroidEntryPoint
-@VssDefinition("vss_rel_4.0.yaml")
+@VssDefinition
 class MainActivity : ComponentActivity() {
     @Inject
     lateinit var connectionInfoRepository: ConnectionInfoRepository

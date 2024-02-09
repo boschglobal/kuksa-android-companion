@@ -26,6 +26,7 @@ plugins {
     kotlin("kapt")
     alias(libs.plugins.hilt.android)
     kotlin("android")
+    id("org.eclipse.kuksa.vss-processor-plugin") version "0.1.3-SNAPSHOT"
 }
 
 android {
@@ -98,6 +99,10 @@ android {
         java.srcDir("src/main/java")
         java.srcDir("src/main/kotlin")
     }
+}
+
+vssProcessor {
+    searchPath = "$rootDir/spec"
 }
 
 dependencies {
